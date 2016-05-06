@@ -1,0 +1,287 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+margin:0;
+padding:0;
+list-style:none;
+vertical-align:baseline;
+box-sizing:border-box;
+font-family: "Josefin Sans",sans-serif;
+}
+
+
+.logo a:link {text-decoration: none;}
+.logo a:visited {text-decoration: none;}
+.logo a:hover {text-decoration: none;}
+.logo a:active {text-decoration: none;}
+
+a:link {text-decoration: none; color:#FFF; -webkit-transition: color 0.1s, delay 0.1s;}
+a:visited {text-decoration: none; }
+a:hover {text-decoration: none; color:#800000; 	
+-webkit-transition: color 0.9s, delay 0.1s;}
+a:active {text-decoration: none;}
+
+
+
+
+
+
+
+
+/*
+ * Navigataur: A pure CSS responsive navigation menu
+ * Author: Mike King (@micjamking)
+ */
+
+/*
+ 	Notes:
+ 
+ 	- Media queries should be edited in both style sections if you require 
+	  a different breakpoint for your navigation.
+	  
+	- Toggle class & menu anchor tags in list items have box-sizing: border-box 
+	  style property to allow padding inside the container without conflicting with layout.	
+*/
+
+
+/*--------------------------------
+ Functional Styles (Required)
+---------------------------------*/
+
+#toggle { display: none; }
+
+/* Nicolas Gallagher micro clearfix */
+.clearfix:before, .clearfix:after { display: table; content: ""; }
+.clearfix:after { clear: both; }
+
+	.menu { display: none; opacity: 0; width: 100%; max-width:1100px; position: fixed; margin-top:50px; z-index:2}
+	.menu > li { display: block; max-width:1100px; width: 100%; margin: 0; list-style: none; float:left;	}
+	.menu > li > a { display: block; max-width:1100px; width: 100%; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+	.toggle { display: block; position: fixed; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; max-width:1100px; width: 100%;}
+	#toggle:checked + div .menu { display: block; opacity: 1;}
+}
+	.mn	{
+		position:fixed;}
+	#mnfig {position: absolute; width:24px; margin-top: 13px; margin-left: 13px; opacity: 0.3}
+	
+	#infos	{
+		height: 100px;
+		background: #FD7755;
+		}
+	
+	#socialp{
+		padding: 0;
+		height: 50px;
+		background: #FFFF42;
+		position: relative;
+		padding-top: 0px;
+		padding-left: 13px;
+		border-bottom: 2px solid #d32f2f;
+		}
+	
+	#socialp a img{
+		margin-right: 20px;
+		margin: 0px;
+
+		}
+		
+	#socialp a img:hover {
+		transform:scale(1.3); /* prefixo para browsers webkit */
+		-webkit-transition: all 0.25s;
+	}
+	
+	#socialp a{
+		opacity: 0.7;
+		width: 30.3%;
+		top:  0px;
+		clear:both;
+		display:inline-table;
+		vertical-align: middle;
+		padding-left: 13%;
+
+		}
+
+
+	
+	
+/*--------------------------------
+ Presentation Styles (Editable)
+---------------------------------*/
+.header{
+	min-height: 100px;
+	height: 100%;
+	padding: 0 20px;
+	background: #FFFFFF;
+	position: relative; 
+}
+
+.header > h1 {
+	float: none;
+	padding: 30px 0 0;		
+	font-style: italic;
+	font-family: Georgia;
+	font-size: 28px;
+	color: #FFF;
+	text-align: center;
+
+}
+
+.nav{ 
+	display: block; 
+	float: none; 
+}
+
+.nav, .menu, .menu > li, .menu > li > a{
+	min-height: 50px;
+	height: 100%; 
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 15px;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1;
+	
+	color: #FFF;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.menu > li > a:hover, .menu > li > a:focus{
+	background: #d32f2f;
+	box-shadow: inset 3px 0px #FF0;
+	color: #FFF;
+	padding: 15px 15px 15px 25px;
+	
+	}
+
+.toggle{ 
+	z-index: 2;
+	min-height: 50px;
+	
+
+}
+
+.menu{
+		background: linear-gradient(rgb(239, 59, 59) 145px, rgb(244, 117, 117) 145px, rgb(239, 59, 59) 145px, rgb(239, 59, 59) 100%);
+		border-top: 2px solid #d32f2f;
+	}
+
+
+	
+	.menu, .menu > li, .menu > li > a{
+		height: auto;
+	}
+	
+	
+	
+	.toggle:after {
+		content: attr(data-open);
+		display: block;
+		max-width:1100px;
+		min-height: 50px;
+		
+		
+		
+		margin: 0px 0;
+		padding: 10px 10px;
+		background: linear-gradient(rgb(239, 59, 59) 145px, rgb(244, 117, 117) 145px, rgb(239, 59, 59) 145px, rgb(239, 59, 59) 100%);
+		
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		
+		text-align: start; 
+		width: 100%; 
+		font-size: 25px;
+		color: #FFFFFF;
+		
+		-webkit-transition: all 0.8s linear;
+		-moz-transition: all 0.8s linear;
+		-o-transition: all 0.8s linear;
+		transition: all 0.8s linear;
+		
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box; 
+		
+		float: none; 
+	}
+	
+	.toggle:hover:after{
+		background: linear-gradient(rgb(239, 59, 59) 145px, rgb(244, 117, 117) 145px, rgb(239, 59, 59) 145px, rgb(239, 59, 59) 100%);
+
+	}
+	
+	#toggle:checked + div .toggle:after{
+		content: attr(data-close);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+.logo	{
+	position: fixed;
+	padding: 5px 11px 5px 11px;
+	text-align: center;
+	width: 200px;
+	vertical-align: top;
+	z-index:998;
+	margin:  auto;
+	left: 0;
+	right: 0;
+	display: block;
+	height: 50px;
+
+	}
+	
+.logo img {
+		width:30px;
+		}
+		
+.logo p	{
+	margin-top: -10px;
+	margin-left:  20px;
+
+	font-family: "Amatic";
+	font-size:30px;
+	
+	
+	color: #fff;
+	border-bottom: 2px solid #FFF;
+	
+	display:inline;
+	vertical-align: top;
+	padding-bottom: 1px;
+	}
+	
+
+	
+@media screen and (max-width: 900px) { 
+	.logo p{
+		}
+
+	
+}

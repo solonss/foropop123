@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face{font-family:'Calluna';
+ src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff') format('woff');
+ 
+	}
+	
+.a:link {text-decoration: none;}
+.a:visited {text-decoration: none;}
+.a:hover {text-decoration: none;}
+.a:active {text-decoration: none;}
+
+
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-size:20px;
+	background: ;;
+
+	}
+
+.todo	{
+	background: #FFF;
+	max-width: 1100px;
+	margin-left:auto;
+	margin-right: auto;
+
+}
+
+@media screen and (max-width: 750px) { 
+  #columns { column-gap: 0px; }
+  .card {  }
+}
