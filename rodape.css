@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+	
+.rodcen {
+	box-sizing:border-box;
+	background: #009688;
+	width:1100px;
+	min-height: 40px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	clear:both;
+	bottom: 0px;
+	border-top: 4px #9C6 solid;
+	display: none;
+	}
+	
+.rodcen p {
+	padding: 10px;
+	text-align:center;
+	font-size: 15px;
+	color: #fff;
+	opacity: .65;
+	}
+	
+.ads	{
+	background: #d32f2f;
+	width:100%;
+	max-width: 1100px;
+	height: auto;
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	clear:both;
+	z-index: 1000;
+	bottom: 0px;
+	
+	text-align: center;
+	color: #FFF;
+	padding: 5px
+	}

@@ -1,14 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-* {
-margin:0;
-padding:0;
-list-style:none;
-vertical-align:baseline;
-box-sizing:border-box;
-font-family: "Josefin Sans",sans-serif;
-}
+
 
 
 .logo a:link {text-decoration: none;}
@@ -49,7 +42,7 @@ a:active {text-decoration: none;}
  Functional Styles (Required)
 ---------------------------------*/
 
-#toggle { display: none; }
+#toggle { display: none; z-index:3;}
 
 /* Nicolas Gallagher micro clearfix */
 .clearfix:before, .clearfix:after { display: table; content: ""; }
@@ -58,32 +51,52 @@ a:active {text-decoration: none;}
 	.menu { display: none; opacity: 0; width: 100%; max-width:1100px; position: fixed; margin-top:50px; z-index:2}
 	.menu > li { display: block; max-width:1100px; width: 100%; margin: 0; list-style: none; float:left;	}
 	.menu > li > a { display: block; max-width:1100px; width: 100%; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-	.toggle { display: block; position: fixed; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; max-width:1100px; width: 100%;}
+	.toggle { display: block; position: fixed; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; max-width:1100px; width: 100%;  z-index:3}
 	#toggle:checked + div .menu { display: block; opacity: 1;}
-}
+
 	.mn	{
-		position:fixed;}
-	#mnfig {position: absolute; width:24px; margin-top: 13px; margin-left: 13px; opacity: 0.3}
+		position:absolute;
+		height:auto;}
+	#mnfig {position: absolute; margin: 15PX; text-align:center;
+	background-color: ;
+		} 		
 	
 	#infos	{
-		height: 100px;
+		min-height: 110px;
 		background: #FD7755;
+		
+		text-align:center;
+		
+		padding-top: 15px;
+		padding-bottom: 15px;
+		}
+	
+	#infos img {
+		position:relative;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom:15px;
+		width: 55px;
 		}
 	
 	#socialp{
 		padding: 0;
 		height: 50px;
-		background: #FFFF42;
+		background: #b71c1c;
 		position: relative;
 		padding-top: 0px;
 		padding-left: 13px;
 		border-bottom: 2px solid #d32f2f;
+		baseline-shift:baseline;
 		}
+		
+		
 	
 	#socialp a img{
 		margin-right: 20px;
 		margin: 0px;
-
+		-webkit-filter: invert(100%);
+		13px; opacity: 0.3;
 		}
 		
 	#socialp a img:hover {
@@ -92,7 +105,7 @@ a:active {text-decoration: none;}
 	}
 	
 	#socialp a{
-		opacity: 0.7;
+		opacity: 0.99;
 		width: 30.3%;
 		top:  0px;
 		clear:both;
@@ -159,22 +172,22 @@ a:active {text-decoration: none;}
 
 .menu > li > a:hover, .menu > li > a:focus{
 	background: #d32f2f;
-	box-shadow: inset 3px 0px #FF0;
+	box-shadow: inset 0px 0px #FF0;
 	color: #FFF;
-	padding: 15px 15px 15px 25px;
+	padding: 15px 15px 15px 20px;
 	
 	}
 
 .toggle{ 
-	z-index: 2;
+	z-index: 3;
 	min-height: 50px;
+	border-bottom: 1px solid #d32f2f;
 	
 
 }
 
 .menu{
 		background: linear-gradient(rgb(239, 59, 59) 145px, rgb(244, 117, 117) 145px, rgb(239, 59, 59) 145px, rgb(239, 59, 59) 100%);
-		border-top: 2px solid #d32f2f;
 	}
 
 
@@ -244,13 +257,12 @@ a:active {text-decoration: none;}
 	
 .logo	{
 	position: fixed;
-	padding: 5px 11px 5px 11px;
-	text-align: center;
-	width: 200px;
+	padding: 5px 0px 5px 0px;
+	text-align: right;
+	width: 220px;
 	vertical-align: top;
 	z-index:998;
-	margin:  auto;
-	left: 0;
+	margin-right: 10px;
 	right: 0;
 	display: block;
 	height: 50px;
@@ -258,19 +270,22 @@ a:active {text-decoration: none;}
 	}
 	
 .logo img {
-		width:30px;
+		width:auto;
+		
 		}
 		
 .logo p	{
-	margin-top: -10px;
-	margin-left:  20px;
+	margin-top: 0px;
+	margin-left:  10px;
 
-	font-family: "Amatic";
-	font-size:30px;
+	font-family: "Montserrat Black";
+	font-size:20px;
+	
+	text-transform: uppercase;
 	
 	
-	color: #fff;
-	border-bottom: 2px solid #FFF;
+	color: #FFF;
+	border-bottom: 0px solid #64dd17;
 	
 	display:inline;
 	vertical-align: top;
